@@ -1,0 +1,37 @@
+
+mysql> insert into Account (email, password) values ('me@work.com', 'bobcat');
+
+mysql> select * from Account;
++----+-------------+----------+---------------------+------------+
+| id | email       | password | createdOn           | modifiedOn |
++----+-------------+----------+---------------------+------------+
+|  1 | me@work.com | bobcat   | 0000-00-00 00:00:00 | NULL       |
++----+-------------+----------+---------------------+------------+
+1 row in set (0.00 sec)
+
+mysql> insert into AddressBook (name) values ('pretzel'); 
+
+mysql> select * from AddressBook;
++----+-----------+---------+---------------------+------------+
+| id | accountId | name    | createdOn           | modifiedOn |
++----+-----------+---------+---------------------+------------+
+|  1 |         0 | pretzel | 0000-00-00 00:00:00 | NULL       |
++----+-----------+---------+---------------------+------------+
+1 row in set (0.00 sec)
+
+mysql> insert into Entry (lastName) values ('McFly');
+
+mysql> insert into Entry (lastName) values ('Anderson');
+
+mysql> insert into Entry (lastName) values ('Goodall');
+
+select * from Entry;
+
++----+---------------+-----------+----------+----------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+| id | addressBookId | firstName | lastName | birthday | type | subtype | contentLineOne | contentLineTwo | contentLineThree | contentLineFour | contentLineFive |
++----+---------------+-----------+----------+----------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+|  1 |             0 |           | McFly    | NULL     | home | phone   |                | NULL           | NULL             | NULL            | NULL            |
+|  2 |             0 |           | Anderson | NULL     | home | phone   |                | NULL           | NULL             | NULL            | NULL            |
+|  3 |             0 |           | Goodall  | NULL     | home | phone   |                | NULL           | NULL             | NULL            | NULL            |
++----+---------------+-----------+----------+----------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+3 rows in set (0.00 sec)
