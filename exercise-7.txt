@@ -1,0 +1,9 @@
+mysql> source ./data/import-table-structure.sql;
+
+mysql> source  ./data/import-account.sql;  
+
+mysql> source ./data/import-entry.sql;  
+
+mysql> source ./data/import-addressbook.sql;  
+
+//did select * from each table (Account, AddressBook, and Entry) to make sure they imported.
