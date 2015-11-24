@@ -1,0 +1,30 @@
+// imported the file which created the database and tables
+
+mysql> source ./data/import-table-structure.sql;
+
+
+
+mysql> show databases;
++------------------------------+
+| Database                     |
++------------------------------+
+| information_schema           |
+| c9                           |
+| decodemtl_addressbook_import |
+| mysql                        |
+| performance_schema           |
++------------------------------+
+5 rows in set (0.00 sec)
+
+
+mysql> show tables;
++----------------------------------------+
+| Tables_in_decodemtl_addressbook_import |
++----------------------------------------+
+| Account                                |
+| AddressBook                            |
+| Entry                                  |
++----------------------------------------+
+3 rows in set (0.00 sec)
+
+mysql> 
