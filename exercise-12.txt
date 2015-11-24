@@ -1,0 +1,40 @@
+accountId numbers 5 and 14 both have 19 addresbooks:
+
+mysql> select count(*),accountId from AddressBook group  by accountId order by count(*) desc limit 10;
++----------+-----------+
+| count(*) | accountId |
++----------+-----------+
+|       19 |         5 |
+|       19 |        14 |
+|       18 |        42 |
+|       18 |        58 |
+|       17 |         2 |
+|       16 |        76 |
+|       16 |        20 |
+|       15 |        23 |
+|       15 |        71 |
+|       15 |        83 |
++----------+-----------+
+10 rows in set (0.00 sec)
+
+
+addressBookId number 37 has 52 entries:
+
+mysql> select count(*), addressBookId  from Entry group  by addressBookId  order by count(*) desc limit 10;                 
++----------+---------------+
+| count(*) | addressBookId |
++----------+---------------+
+|       52 |            37 |
+|       50 |            20 |
+|       49 |            50 |
+|       48 |            89 |
+|       48 |             8 |
+|       47 |            62 |
+|       46 |             7 |
+|       46 |            57 |
+|       46 |            23 |
+|       45 |            11 |
++----------+---------------+
+10 rows in set (0.00 sec)
+
+
