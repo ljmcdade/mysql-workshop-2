@@ -1,0 +1,6 @@
+mysql> drop table Account;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> describe Account;
+ERROR 1146 (42S02): Table 'decodemtl_addressbook_import.Account' doesn't exist
+mysql> 
