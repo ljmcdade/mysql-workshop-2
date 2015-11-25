@@ -1,0 +1,5 @@
+created 3 tables
+
+Inventory table
+Invoices table
+and Search table where you can look at comparison of invoiceId to productId
